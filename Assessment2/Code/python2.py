@@ -28,6 +28,8 @@ import random
 
 # <HINT>
 # How does a for loop iterate through a string?
+from typing import Any, Iterator
+
 
 def one(input):
     final_result = ""
