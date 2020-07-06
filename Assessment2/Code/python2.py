@@ -81,10 +81,7 @@ def three(a):
     list1.append(str(a)*3)
     list1.append(str(a)*4)
     list1 = [int(i) for i in list1]
-    sum(list1)
-    return list1
-
-print(three(1))
+    return sum(list1)
 
 
 # <QUESTION 4>
