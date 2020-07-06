@@ -1,3 +1,4 @@
+import random
 # INSTRUCTIONS
 
 # In case it is not clear, the Question appears first, then examples, then any hints and finally the function that you need to complete appears underneath:
@@ -110,13 +111,13 @@ def three(a):
 # Use your CLI to access the Python documentation and get help manipulating strings - help(list.insert).
 # How would you seperate a string into characters?
 
-def four(input1, input2):
-    result = ""
-    for i in input1 and input2:
-        result = map(zip(input1,input2))
-    return result
-
-print(four("cat", "dog"))
+# def four(input1, input2):
+#     result = ""
+#     for i in input1 and input2:
+#         result = map(zip(input1,input2))
+#     return result
+#
+# print(four("cat", "dog"))
 
 
 # <QUESTION 5>
@@ -134,7 +135,16 @@ print(four("cat", "dog"))
 # The random module contains a function called randint.
 
 def five():
-    return []
+    random_nr = []
+    i = 0
+    while i < 5:
+        n = random.randint(100, 200)
+        if n % 2 == 0:
+            random_nr.append(n)
+            i =+ 1
+    return random_nr
+
+print(five)
 
 
 # <QUESTION 6>
