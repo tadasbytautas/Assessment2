@@ -36,7 +36,6 @@ def one(input):
     for i in input_string:
         new_string.append(i * 3)
     return final_result.join(new_string)
-print(one("aloha"))
 
 
 # <QUESTION 2>
@@ -55,7 +54,10 @@ print(one("aloha"))
 # Use your CLI to access the Python documentation and get help manipulating strings - help(range).
 
 def two(input):
-    return False
+    if input % input == 0 and input % 1 == 0:
+        return True
+    else:
+        return False
 
 
 # <QUESTION 3>
@@ -73,7 +75,16 @@ def two(input):
 # What happens if you multiply a string by a number?
 
 def three(a):
-    return 1
+    list1 = []
+    list1.append(str(a))
+    list1.append(str(a)*2)
+    list1.append(str(a)*3)
+    list1.append(str(a)*4)
+    list1 = [int(i) for i in list1]
+    sum(list1)
+    return list1
+
+print(three(1))
 
 
 # <QUESTION 4>
