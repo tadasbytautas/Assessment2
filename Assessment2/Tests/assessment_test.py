@@ -22,12 +22,12 @@ from Code import python2
 #     assert python2.three(7) == 8638
 #     assert python2.three(4) == 4936
 
-# def test_four():
-#     assert python2.four("String","Fridge") == "SFtrriidngge"
-#     assert python2.four("Dog","Cat") == "DCoagt"
-#     assert python2.four("True","Tree") == "TTrrueee"
-#     assert python2.four("return","letter") == "rleettutrenr"
-#     assert python2.four("Cat","Dog") == "CDaotg"
+def test_four():
+    assert python2.four("String","Fridge") == "SFtrriidngge"
+    assert python2.four("Dog","Cat") == "DCoagt"
+    assert python2.four("True","Tree") == "TTrrueee"
+    assert python2.four("return","letter") == "rleettutrenr"
+    assert python2.four("Cat","Dog") == "CDaotg"
 #
 def split(input):
     if len(input) != 5:

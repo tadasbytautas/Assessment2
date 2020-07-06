@@ -113,13 +113,13 @@ def three(a):
 # Use your CLI to access the Python documentation and get help manipulating strings - help(list.insert).
 # How would you seperate a string into characters?
 
-# def four(input1, input2):
-#     result = ""
-#     for i in input1 and input2:
-#         result = map(zip(input1,input2))
-#     return result
-#
-# print(four("cat", "dog"))
+def four(input1, input2):
+    result = ""
+    for i in input1 and input2:
+        result = zip(input1,input2)
+    return result
+
+print(four("cat", "dog"))
 
 
 # <QUESTION 5>
