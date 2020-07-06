@@ -138,10 +138,9 @@ def five():
     random_nr = []
     i = 0
     while i < 5:
-        n = random.randint(100, 200)
-        if n % 2 == 0:
-            random_nr.append(n)
-            i =+ 1
+        n = random.randint(100, 200) * 2
+        random_nr.append(n)
+        i += 1
     return random_nr
 
 print(five)

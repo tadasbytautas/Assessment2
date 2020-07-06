@@ -29,21 +29,21 @@ from Code import python2
 #     assert python2.four("return","letter") == "rleettutrenr"
 #     assert python2.four("Cat","Dog") == "CDaotg"
 #
-# def split(input):
-#     if len(input) != 5:
-#         return False
-#     else:
-#         for i in input:
-#             if i % 2 != 0 or 100 > i or i > 200:
-#                 return False
-#         return True
-#
-# def test_five():
-#     assert split(python2.five()) == True
-#     assert split(python2.five()) == True
-#     assert split(python2.five()) == True
-#     assert split(python2.five()) == True
-#     assert split(python2.five()) == True
+def split(input):
+    if len(input) != 5:
+        return False
+    else:
+        for i in input:
+            if i % 2 != 0 or 100 > i or i > 200:
+                return False
+        return True
+
+def test_five():
+    assert split(python2.five()) == True
+    assert split(python2.five()) == True
+    assert split(python2.five()) == True
+    assert split(python2.five()) == True
+    assert split(python2.five()) == True
 # #
 def test_six():
     assert python2.six("ilovepy") == True
