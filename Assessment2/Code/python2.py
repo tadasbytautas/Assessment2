@@ -164,6 +164,8 @@ print(five)
 # There are no hints for this question.
 
 def six(input):
+    if input[-2] == "p" and input[-1] == "p":
+        return True
     return False
 
 
